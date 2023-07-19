@@ -6,6 +6,10 @@ html{
 body{
     background-color: rgb(20, 20, 20);
 }
+button{
+    font-family: 'Tahoma';
+    text-align: center;
+}
 .upgrades-page{
     padding: 15px;
     width: 500px;
@@ -17,10 +21,10 @@ body{
 .upgrades-page button{
     height: 30px;
     border-radius: 8px;
-    font-family: "Tahoma";
+    font-family: 'Tahoma';
     color: white;
-    background-color: rgb(109, 83, 253);
+    background-color: rgb(44, 33, 106);
 }
 #back{
-    background-color: red;
+    background-color: rgb(95, 0, 0);
 }
