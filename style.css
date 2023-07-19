@@ -6,9 +6,18 @@ html{
 body{
     background-color: rgb(20, 20, 20);
 }
-button{
+.counter, button{
     font-family: 'Tahoma';
     text-align: center;
+}
+.counter{
+    font-size: 90px;
+}
+.button{
+    background-image: linear-gradient(rgb(75, 201, 206), rgb(215, 72, 177));
+    border-radius: 200px;
+    width: 500px;
+    height: 400px;
 }
 .upgrades-page{
     padding: 15px;
