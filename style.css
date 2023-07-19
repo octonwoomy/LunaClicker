@@ -13,11 +13,19 @@ body{
 .counter{
     font-size: 90px;
 }
-.button{
-    background-image: linear-gradient(rgb(75, 201, 206), rgb(215, 72, 177));
-    border-radius: 200px;
-    width: 500px;
-    height: 400px;
+.button {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: none;
+}
+.button img {
+    display: flex;
+    justify-content: center;
+}
+.button img:active {
+    transform: translateY(10px);
 }
 .upgrades-page{
     padding: 15px;
