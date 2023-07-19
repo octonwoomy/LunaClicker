@@ -18,9 +18,11 @@ function AddCounter(){
 function DisplayUpgrades(){
     upgradePage.style.display = "block";
 }
+
 function EndUDisplay(){
     upgradePage.style.display = "none";
 }
+
 function BuyDouble() {
     if (counter >= 50 && Buyable1 === true) {
         counter -= 50;
@@ -32,6 +34,7 @@ function BuyDouble() {
         alert("You're broke lol")
     }
 }
+
 function BuyTriple(){
     if (counter >= 300 && Buyable2 === true) {
         counter -= 300;
@@ -43,7 +46,6 @@ function BuyTriple(){
         alert("You're broke lol")
     }
 }
-
 
 UpgradeTriple.addEventListener("click", BuyTriple)
 upgradeDouble.addEventListener("click", BuyDouble)
