@@ -8,7 +8,8 @@ const UpgradeTriple = document.getElementById("triple");
 const UpgradeQuad = document.getElementById("quad");
 const UpgradePenta = document.getElementById("penta");
 const UpgradeHexa = document.getElementById("hexa");
-const nuke = document.getElementById("nuke")
+const nuke = document.getElementById("nuke");
+const nukeGif = document.getElementById("nukeGif");
 let Buyable1 = true;
 let Buyable2 = true;
 let Buyable3 = true;
@@ -37,10 +38,12 @@ function BuyDouble() {
         counter -= 50;
         counterText.textContent = `Times Clicked: ${counter}`;
         counterIncrement *= 2;
+        upgradeDouble.style.backgroundColor = "black"
+        upgradeDouble.textContent = "Sold Out";
         Buyable1 = false;
     }
     else if(Buyable1 === false){
-        upgradeDouble.style.backgroundColor = "black"
+        null
     }
     else{
         alert("You're broke lol")
@@ -52,10 +55,12 @@ function BuyTriple(){
         counter -= 300;
         counterText.textContent = `Times Clicked: ${counter}`;
         counterIncrement *= 3;
+        UpgradeTriple.style.backgroundColor = "black"
+        UpgradeTriple.textContent = "Sold Out";
         Buyable2 = false;
     }
     else if(Buyable2 === false){
-        UpgradeTriple.style.backgroundColor = "black"
+        null
     }
     else{
         alert("You're broke lol")
@@ -67,10 +72,12 @@ function BuyQuad(){
         counter -= 3000;
         counterText.textContent = `Times Clicked: ${counter}`;
         counterIncrement *= 4;
+        UpgradeQuad.style.backgroundColor = "black"
+        UpgradeQuad.textContent = "Sold Out";
         Buyable3 = false;
     }
     else if(Buyable3 === false){
-        UpgradeQuad.style.backgroundColor = "black"
+        null
     }
     else{
         alert("You're broke lol")
@@ -82,10 +89,12 @@ function BuyPenta(){
         counter -= 10000;
         counterText.textContent = `Times Clicked: ${counter}`;
         counterIncrement *= 5;
+        UpgradePenta.style.backgroundColor = "black"
+        UpgradePenta.textContent = "Sold Out";
         Buyable4 = false;
     }
     else if(Buyable4 === false){
-        UpgradePenta.style.backgroundColor = "black"
+        null
     }
     else{
         alert("You're broke lol")
@@ -97,10 +106,12 @@ function BuyHexa(){
         counter -= 50000;
         counterText.textContent = `Times Clicked: ${counter}`;
         counterIncrement *= 6;
+        UpgradeHexa.style.backgroundColor = "black"
+        UpgradeHexa.textContent = "Sold Out";
         Buyable5 = false;
     }
     else if(Buyable5 === false){
-        UpgradeHexa.style.backgroundColor = "black"
+        null
     }
     else{
         alert("You're broke lol")
@@ -109,13 +120,16 @@ function BuyHexa(){
 
 function EndGame(){
     if (counter >= 1000000 && Buyable6 === true) {
-        counter -= 1000000;
+        nukeGif.style.display = "block"
+        setInterval(() => {
+            nukeGif.style.display = "none";
+        }, 3500);
+        counter = 0;
+        counterIncrement = 1
         counterText.textContent = `Times Clicked: ${counter}`;
-        counterIncrement *= 4;
-        Buyable6 = false;
     }
     else if(Buyable6 === false){
-        UpgradeQuad.style.backgroundColor = "black"
+        null
     }
     else{
         alert("You're broke lol")
