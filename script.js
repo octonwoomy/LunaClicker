@@ -22,6 +22,7 @@ function EndUDisplay(){
 function BuyDouble() {
     if (counter >= 50 && Buyable === true) {
         counter -= 50;
+        counterText.textContent = `Times Clicked: ${counter}`;
         counterIncrement *= 2;
         Buyable = false;
     }
