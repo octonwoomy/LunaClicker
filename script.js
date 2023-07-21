@@ -121,15 +121,17 @@ function BuyHexa(){
 function EndGame(){
     if (counter >= 1000000 && Buyable6 === true) {
         nukeGif.style.display = "block"
+        button.style.display = "none"
         setInterval(() => {
             nukeGif.style.display = "none";
+            button.style.display = "block"
         }, 3500);
         counter = 0;
         counterIncrement = 1
         counterText.textContent = `Times Clicked: ${counter}`;
     }
     else if(Buyable6 === false){
-        null
+        //pass
     }
     else{
         alert("You're broke lol")
