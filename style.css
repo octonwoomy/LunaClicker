@@ -68,3 +68,30 @@ body{
     transform: translate(-50%, -50%);
     width: 600px;
 }
+@media (min-width: 480px) and (max-width: 767px){
+.counter{
+    font-size: 50px;
+}
+.button img{
+    width: 300px;
+}
+.upgrades-page{
+    position: absolute;
+    top: 87%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    width: 300px;
+    padding: 10px;
+}
+.upgrades{
+    position: absolute;
+    top: 35%;
+    left: 10%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+    text-align: center;
+    font-size: 18px;
+}
+}
